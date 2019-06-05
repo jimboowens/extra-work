@@ -1,0 +1,269 @@
+#above-header-container {
+border-bottom: 7px solid #fcfaf6; 
+  outline: 2px solid #8d211b;
+}
+
+div.pdfemb-toolbar {
+    background-color: #8d211b !important;
+}
+
+div.pdfemb-toolbar div {
+    font-family: customHeaderFont !important;
+    font-size: 16px !important;
+}
+
+#sp_main #sp_panes .sp_st {
+    background-color: #8d211b !important;
+}
+
+.otw-widget-form-wrap label {
+    display: inline-block !important;
+    font-size: 14px;
+    width: 30%;
+}
+
+#footer-bottom {
+    background-color: white;
+}
+
+@font-face {
+    font-family: customHeaderFont;
+    src: url(http://ninfas.com/wp-content/uploads/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: customBodyFont;
+    src: url(http://ninfas.com/wp-content/uploads/SpecialElite.ttf);
+}
+
+h1, h2, h3, h4, h5, h6, #main-header, #et-top-navigation {
+    font-family: customHeaderFont;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: customBodyFont;
+    height: 100% !important;
+}
+
+.et_header_style_centered #logo {
+    padding: 1.5%;
+}
+
+#main-header {
+box-shadow: none !important;
+}
+
+.et_header_style_centered #main-header div#et-top-navigation {
+    bottom: -20px;
+}
+
+#et-top-navigation {
+    font-weight: 400;
+}
+
+.et_pb_map_container { 
+    filter: url("data:image/svg+xml;utf8,#grayscale"); 
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+}
+
+
+
+
+
+
+.otw-widget-form-wrap input[type="text"], .otw-widget-form-wrap select, .selectric {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #8d211b;
+    border-radius: 0;
+    height: 40px;
+}
+.otw-widget-form-wrap select, .selectric {
+    position: relative;
+}
+.powered-by-open-table {
+    display: none;
+}
+.otw-submit {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #8d211b;
+    border-radius: 0;
+    color: #8d211b;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: customBodyFont;
+    padding: 8px;
+    transition: all 0.2s ease-in-out 0s;
+    width: 100%;
+}
+.otw-submit:hover {
+    background: #8d211b none repeat scroll 0 0;
+    border: 1px solid #8d211b;
+    color: #fff;
+}
+.otw-widget-form-wrap label {
+    display: inline-block;
+    font-size: 14px;
+    width: 30%;
+}
+.otw-widget-form-wrap input[type="text"], .otw-widget-form-wrap select, .selectric-wrapper {
+    display: inline-block;
+    width: 68%;
+}
+div.otw-wrapper div.selectric p {
+    color: #8d211b;
+    font-size: 14px;
+    line-height: 40px;
+}
+.selectric-items li {
+    background: #fff none repeat scroll 0 0;
+    color: #8d211b;
+    cursor: pointer;
+}
+.selectric-items li:hover {
+    background: #8d211b none repeat scroll 0 0;
+    color: #fff;
+}
+
+
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.border-left, .border-right {
+    position: fixed;
+    z-index: 999999 !important;
+    width: 2px;
+    background: #8d211b;
+    top: 0;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+}
+
+.border-left {
+    left: 8px;
+}
+
+.border-right {
+    right: 8px;
+}
+
+#et-info {
+    right: 0px;
+    float: right;
+    padding-top: 15px;
+}
+
+#above-header-container {
+padding: 30px 0;
+display: block;
+width: 100%;
+
+}
+#above-header-content {
+text-align: center;
+}
+#above-header-content h1 {
+color: #8d211b !important;
+}
+
+#tooltipbro {display: none !important;}
+
+#et-info-phone, #et-info-email, .et-cart-info span {
+    display: none;
+}
+
+#main-header.et-fixed-header {
+    border-bottom: 2px solid #8d211b;
+}
+
+.et_fixed_nav #top-header {
+    position: absolute;
+}
+
+.et_fixed_nav #main-header {
+    position: absolute;
+}
+
+.custom-address-phone-fax{
+    text-align: center;
+    margin-top:3px;
+}
+
+.custom-address-phone-fax span.phone-fax{
+    font-size: medium;
+}
+
+div.pdfemb-toolbar div.pdfemb-poweredby a {
+    border-bottom: 1px solid #333;
+    color: lightgray;
+    display: none;
+    text-decoration: none;
+}
+
+.stripes {
+    background: rgba(0, 0, 0, 0) url("http://ninfas.com/wp-content/uploads/ninfas-stripes.jpg") repeat scroll 0 0 / 500px 300px;
+}
+
+.sp_st_section_title {color: white !important;}
+
+#sp_main ul.sp_tabs, #sp_main .sp_tabs .t_first, #sp_main .sp_md {
+    display: none;
+}
+
+#footer-info a {
+    color: #8d211b;
+    font-weight: 500;
+}
+
+#footer-bottom {
+    background-color: #fcfaf6;
+}
+#mobilePress .et_pb_column.et_pb_column_1_4 {
+    width: 50% !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 0 30px 0;
+}
+
+@media screen and (max-width: 480px ){
+.et_header_style_centered #logo {
+    max-height: 150px;
+}
+.custom-address-phone-fax {
+font-size: 16px; !important;
+}
+#above-header-content h1 {
+    font-size: 20px;
+}
+	}
+
+#main-header.et-fixed-header {
+    padding-bottom: 30px;
+}
+
+#main-header.et-fixed-header {
+    padding-bottom: 30px;
+}
+
+.et_header_style_centered #main-header .mobile_nav {
+    margin-top: 55px;
+}
+
+.et_header_style_centered .et_mobile_menu {
+    top: 37px;
+}
+
+.ig_popup.ig_inspire .ig_message {
+    padding: 0 !important;
+}
