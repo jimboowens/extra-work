@@ -1,0 +1,105 @@
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    font-size:6vh;
+}
+p{
+    font-size: 2vh;
+}
+@font-face {
+    font-family: 'social';
+    src: url('socialfont.eot');
+    src: url('socialfont.eot?#iefix') format('embedded-opentype'),
+         url('./public/socialfont.woff') format('woff'),
+         url('socialfont.ttf') format('truetype'),
+         url('socialfont.svg#social') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.social{ 
+    display:inline-block;
+    top: 1.8vh; 
+    left: 1.68vw; 
+    font-family: 'social'; 
+    font-size: 30px; 
+    color: #999; 
+    text-decoration:none; 
+}
+.facebook:hover { 
+    color: #3b5999; 
+}
+.linkedIn:hover { 
+    color: #3692c3; 
+}
+.twitter:hover { 
+    color: #00c4f8; 
+}
+
+
+
+@media(max-width:992px){
+    .sliderImage img{
+        visibility:hidden;
+    }
+    .sliderText{
+
+    }
+    .show-on-med-and-down{
+        display:visible;
+    }
+}
+
+@media(max-width:1200px){
+  
+    .sliderText{
+
+    }
+}
+
+@media(max-width:1400px){
+  
+    .sliderText{
+        margin-left:0vw;
+    }
+}
+
+@media(min-width:993px){
+    .show-on-med-and-down{
+        display:none;
+    }
+}
+
+.show{
+    visibility:visible;
+}
+
+.menuItem{
+    position:inline;
+}
+
+.menuDropdown{
+    position:inline;
+}
+
+.navBarMenu{
+    width:20%;
+}
+
+.sliderImage{
+    padding-top:8vh;  
+}
+
+.sliderImage img{
+
+    width: 50%;
+    position: unset;
+}
+
+
+.sliderText{
+    /* margin-left:-15vw; */
+    width:50vw;
+}
