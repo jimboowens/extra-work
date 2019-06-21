@@ -10,7 +10,7 @@ let navBarHTML;
 navBarHTML=`
     <nav class="nav-wrapper blue darken-4">
         <ul>
-            <li><a>OSI Jobs</a></li>
+            <li class="OSIJobs"><a>OSI Jobs</a></li>
             <li><a class="social facebook" href="http://www.facebook.com/pages/OSI/314041371978411" target="blank">f</a></li>
             <li><a class="social linkedIn" href="http://www.linkedin.com/company/2497623" target="blank">i</a></li>
             <li><a class="social twitter" href="http://twitter.com/osifoodjobs" target="blank">l</a></li>
@@ -33,8 +33,8 @@ $(document).ready(()=> {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
-        autoplaySpeed: 5500,
+        autoplay: true,
+        autoplaySpeed: 1500,
         draggable:true,
         responsive: [{
           breakpoint: 600,
@@ -93,6 +93,33 @@ let mainHTML=`
             </ul>
         </div>
     </div>
+    <div class="row center">
+        <div class="col s4">test</div>
+        <div class="col s4">test</div>
+        <div class="col s4">test</div>
+    </div>
       
 `
 $(main).html(mainHTML)
+
+
+
+
+
+var HttpClient = function(){
+    this.get = (aUrl, aCallback)=> {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = ()=> { 
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                aCallback(anHttpRequest.responseText);
+        }
+
+        anHttpRequest.open( "get", aUrl, true );            
+        anHttpRequest.send( null );
+    }
+}
+
+let client = new HttpClient();
+client.get('https://loxo.co/api/osi-jobs/jobs', (response)=> {
+    console.log(response);
+});
