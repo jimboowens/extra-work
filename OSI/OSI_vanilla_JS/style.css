@@ -1,5 +1,6 @@
 html{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom:60px;
 }
 h1{
     font-size:6vw;
@@ -112,3 +113,25 @@ ul,p,div{
     text-align: center;
     border-radius: 10px;
   }
+
+.headerDiv{
+    border-radius: 10px;
+    margin:25px;
+    color:white;
+}
+
+.headerText{
+    margin-left: 30px;
+}
+
+.member{
+    margin-bottom: 60px;
+}
+.memberImage{
+    width:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top:30px;
+}

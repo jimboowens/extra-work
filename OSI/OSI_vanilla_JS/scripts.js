@@ -9,48 +9,49 @@ let footer = document.querySelector('.footer')
 let navBarHTML=`
     <nav class="nav-wrapper blue darken-4">
         <ul>
-            <li class="OSIJobs"><a href="/">OSI Jobs</a></li>
+            <li><a class="OSIJobs"href="/">OSI Jobs</a></li>
             <li><a class="social facebook" href="http://www.facebook.com/pages/OSI/314041371978411" target="blank">f</a></li>
             <li><a class="social linkedIn" href="http://www.linkedin.com/company/2497623" target="blank">i</a></li>
             <li><a class="social twitter" href="http://twitter.com/osifoodjobs" target="blank">l</a></li>
         </ul>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a><div id="about">About Us</div></div></a></li>
-            <li><a><div id="contact">Contact</div></a></li>
+            <li><a><div id="contact">Contact Us</div></a></li>
             <li><a><div id="employerServices">Employer Services</div></a></li>
             <li><a><div id="ventureCapitalPartnership">Venture Capital Partnership</div></a></li>
             <li><a><div id="jobListings">Job Listings</div></a></li>
         </ul>
         <div id="dropdown" class="show-on-med-and-down"><a>Menu</a></div></div>
         <div id="panel" class="blue darken-4 right">
-            <div><a><div id="about">About Us</div></a></div>
-            <div><a><div id="contact">Contact</div></a></div>
-            <div><a><div id="employerServices">Employer Services</div></a></div>
-            <div><a><div id="ventureCapitalPartnership">Venture Capial Partnership</div></a></div>
-            <div><a><div id="jobListings">Job Listings</div></a></div>
+            <a><div id="about">About Us</div></a>
+            <a><div id="contact">Contact Us</div></a>
+            <a><div id="employerServices">Employer Services</div></a>
+            <a><div id="ventureCapitalPartnership">Venture Capial Partnership</div></a>
+            <a><div id="jobListings">Job Listings</div></a>
         </div>
     </nav>
 `
+//================================MAIN CONTENT, THIS HTML IS REPLACED ONCLICK EVENTS================================
 
 let mainHTML=`
     <div class="your-class"><div class="sliderImage"></div></div><div class="container"></div></div>
     <div class="your-class">
         <div class="sliderImage">
-            <img src="./public/images/fill.jpg" class="image1" />
+            <img class="z-depth-5" src="./public/images/fill.jpg" class="image1" />
         </div>
         <div class="sliderText">
             <h2>We fill the following types of positions</h2>
             <p>Operations/Manufacturing • Purchasing/Supply Chain • Research & Development • Quality Assurance • Sales (National/Regional/DSD) • Engineering/Maintenance • CEO, CFO, COO, GM • Project Management • Customer Service • Food Safety • Distribution/Logistics Management • Sanitation</p>
         </div>
         <div class="sliderImage">
-            <img src="./public/images/grass.jpg" class="image2"/>
+            <img class="z-depth-5" src="./public/images/grass.jpg" class="image2"/>
         </div>
         <div class="sliderText">
             <h2>Our Mission Statement:</h2>
             <p>Our mission is to provide our clients with the highest quality service, professionalism and ethics, while pleasing God in all that we do.</p>
         </div>
-        <div class="sliderImage">
-            <img src="./public/images/veggies.jpg" class="image3" />
+        <div class="sliderImage  z-depth-5">
+            <img class="z-depth-5" src="./public/images/veggies.jpg" class="image3" />
         </div>
         <div class="sliderText">
             <h2>Excellence in Food Industry Recruitment</h2>
@@ -97,14 +98,17 @@ let mainHTML=`
         </div>
     </div>
 `
-
+//======================================END MAIN HTML CONTENT=================================
 let footerHTML = `
-<nav class="nav-wrapper blue darken-4">
+<nav class="nav-wrapper blue darken-4 hide-on-med-and-down">
     <ul>
         <li class="OSIJobs"><a>OSI Jobs</a></li>
         <li><a class="social facebook" href="http://www.facebook.com/pages/OSI/314041371978411" target="blank">f</a></li>
         <li><a class="social linkedIn" href="http://www.linkedin.com/company/2497623" target="blank">i</a></li>
         <li><a class="social twitter" href="http://twitter.com/osifoodjobs" target="blank">l</a></li>
+    </ul>
+    <ul>
+        <li>© 2019 All Rights Reserved</li>
     </ul>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a><div id="about">About Us</div></div></a></li>
@@ -116,11 +120,65 @@ let footerHTML = `
 //================================END OF ONLOAD HTML INJECTIONS================================
 //=============================START OF ONCLICK HTML TO BE INJECTED============================
 let aboutHTML = `
-<div class="aboutPage">about</div>
+    <div class="aboutPage">
+        <div class="headerDiv blue darken-4">
+            <div class="headerText">About Us</div>  
+        </div>
+        <div class="container">
+            OSI, a group of food industry recruiters, was established in 1992 and currently operates offices in Georgia, North Carolina, and Northern Virginia. OSI is a member of and adheres to all ethics and standards of the Georgia Association of Personnel Services.
+            <em>Our mission is to provide our clients with the highest quality service, professionalism and ethics, while pleasing God in all that we do.</em>
+        </div>
+        <div class="headerDiv blue darken-4">
+            <div class="headerText">Our Team</div>
+        </div>
+        <div class="container">
+            <div class="memberName"><h3>Tim Oliver  – Recruiter / Senior Partner, CPC</h3></div>
+            <div class="member row">
+                <div class="col s4">
+                    <img class="memberImage z-depth-5" src="./public/images/Tim.jpeg" />
+                </div>
+                <div class="memberDescription col s8">
+                    <div>
+                    Tim has been recruiting in the food industry for 20+ years. He previously held office level positions with two other nationwide search firms before starting OSI, his own company of food industry recruiters, in 1992.&nbsp;Tim has BS &amp; MS&nbsp;degrees in Food Science from the University of Georgia. He worked in R&amp;D for a Fortune 500 company and a Production Supervisor for a major food processor. He is a Certified Personnel Consultant as awarded by the National Association of Personnel Services.
+                    </div>
+                </div>
+            </div>
+
+            <div class="memberName"><h3>Dave Buergler – Recruiter / Senior Partner</h3></div>
+            <div class="member row">
+                <div class="col s4">
+                <img class="memberImage z-depth-5" src="./public/images/Dave.png" />
+                </div>
+                <div class="memberDescription col s8">
+                    <div>
+                    Dave has BS and MS degrees from the University of Missouri. He has 20+ years of industry experience. Dave started his career as a Food Technologist for a Fortune 500 company. Then he moved into the area of Sensory/Marketing Research. Dave then joined a large foodservice company as Senior Manager of Marketing Research. He eventually held Director-level positions in New Product Marketing, Brand Management, and Field Marketing. Dave took his background and experience to the team of food industry recruiters in 1998.
+                    </div>
+                </div>
+            </div>
+            <div class="memberName"><h3>Joel Oliver – Senior Recruiter</h3></div>
+            <div class="member row">
+                <div class="col s4">
+                    <img class="memberImage z-depth-5" src="./public/images/Joel.png" />
+                </div>
+                <div class="memberDescription col s8">
+                    <div>
+                    Joel followed in his father’s footsteps as a recruiter after completing his Masters degree. What began as a temporary job to make ends meet has turned into a career. With his M.Div., his heart is for ministry and serving God’s church globally. But today’s economy calls more and more for bivocational ministers. Joel has been with OSI since 2012 including a 12 month sabbatical to serve with his wife as missionaries in Honduras.
+                    </div>
+                </div>
+            </div>
+            <div>
+            We are a member of <a href="https://www.Bio-Partners.com" target="_blank" rel="noopener noreferrer">Bio-Partners</a> It’s a consortium of highly experienced, successful recruiters specializing in key talent. In pharmaceutical, biotech/life sciences, medical device, bioinformatics, information technology, & healthcare corporations.
+            </div>
+        </div>
+    </div>
 `
 
 let contactHTML = `
-<div class="contactPage">contact</div>
+    <div class="contactPage">
+        <div class="headerDiv blue darken-4">
+            contact us
+        </div>
+    </div>
 `
 
 let employerServicesHTML = `
@@ -134,7 +192,7 @@ let ventureCapitalPartnershipHTML = `
 let jobListingsHTML = `
 <div class="contactPage">job listings</div>
 `
-//================================END OF HTML TO BE INJECTED================================
+//==================================END OF HTML TO BE INJECTED================================
 // $.getJSON();
 
 //This is the first get request to try to get the 200 response, but the username and password are not working even when I manually go to this url and input the information
@@ -229,6 +287,5 @@ $(document).ready(()=> {
     $("#jobListings").click(()=>{
         $(main).html(jobListingsHTML)
     })
-
 })
 
